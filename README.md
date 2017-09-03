@@ -1,17 +1,33 @@
 # py-ml
 
-# Setup
+python machine learning
+
+#
+use python 3
+
+###### Setup
 
 ```
 virtualenv env
 ```
 
+
+###### Activate
+
 ```
-env/bin/pip3.6 install -r requirements.txt
+source env/bin/activate
 ```
 
-# Run Code
+
+###### Install
+
 ```
-env/bin/python3.6 <FILE_NAME>
+pip install -r requirements.txt
 ```
 
+
+###### Run Code
+
+```
+python <FILE_NAME>
+```
