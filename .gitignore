@@ -113,3 +113,7 @@ pip-selfcheck.json
 /data/*
 !data/.gitkeep
 
+/_approved/*
+!_approved/.gitkeep
+/_not_approved/*
+!_not_approved/.gitkeep
