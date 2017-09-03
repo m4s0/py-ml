@@ -21,12 +21,12 @@ def tokenizer_porter(text):
 nltk.download('stopwords')
 stop = stopwords.words('english')
 
-df = pd.read_csv('./data/movie_data.csv')
+df = pd.read_csv('./data/comments.csv')
 
-X_train = df.loc[:25000, 'review'].values
-y_train = df.loc[:25000, 'sentiment'].values
-X_test = df.loc[25000:, 'review'].values
-y_test = df.loc[25000:, 'sentiment'].values
+X_train = df.iloc[:2500, 0].values
+y_train = df.iloc[:2500, 1].values
+X_test = df.iloc[2500:, 0].values
+y_test = df.iloc[2500:, 1].values
 
 tfidf = TfidfVectorizer(strip_accents=None,
                         lowercase=False,
