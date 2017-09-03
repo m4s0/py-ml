@@ -1,6 +1,8 @@
-import pyprind
-import pandas as pd
 import os
+
+import numpy as np
+import pandas as pd
+import pyprind
 
 # change the `basepath` to the directory of the
 # unzipped movie dataset
@@ -19,8 +21,6 @@ for s in ('test', 'train'):
             df = df.append([[txt, labels[l]]], ignore_index=True)
             pbar.update()
 df.columns = ['review', 'sentiment']
-
-import numpy as np
 
 np.random.seed(0)
 df = df.reindex(np.random.permutation(df.index))
