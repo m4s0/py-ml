@@ -110,3 +110,6 @@ pip-selfcheck.json
 
 /.idea/
 /env/
+/data/*
+!data/.gitkeep
+
