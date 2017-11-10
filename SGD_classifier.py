@@ -78,7 +78,7 @@ hashing_vectorizer = HashingVectorizer(decode_error='ignore',
 
 SGD_classifier = SGDClassifier(loss='log', random_state=1, n_iter=1)
 
-to_test = 5000
+to_test = 10000
 batch_size = 1000
 iterations = int((size - to_test) / batch_size)
 
