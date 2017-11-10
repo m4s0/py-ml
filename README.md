@@ -33,7 +33,10 @@ wget --output-document ./_not_approved/comments.json http://talk.calciomercato.p
 ```
 
 ```
-wget --output-document ./_approved/comments.json http://talk.calciomercato.pro/api/comments-filtered?from=05-11-2017&to=10-11-2017&status=1
+wget --output-document ./_approved/comments_1.json http://talk.calciomercato.pro/api/comments-filtered?from=20-10-2017&to=25-10-2017&status=1
+wget --output-document ./_approved/comments_2.json http://talk.calciomercato.pro/api/comments-filtered?from=26-10-2017&to=31-10-2017&status=1
+wget --output-document ./_approved/comments_3.json http://talk.calciomercato.pro/api/comments-filtered?from=01-11-2017&to=05-11-2017&status=1
+wget --output-document ./_approved/comments_4.json http://talk.calciomercato.pro/api/comments-filtered?from=06-11-2017&to=10-11-2017&status=1
 ```
 
 ###### Run Code
