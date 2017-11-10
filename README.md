@@ -8,7 +8,7 @@ use python 3
 ###### Setup
 
 ```
-virtualenv env
+virtualenv -p python3 env
 ```
 
 
@@ -25,6 +25,16 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+
+###### Download data
+
+```
+wget --output-document ./_not_approved/comments.json http://talk.calciomercato.pro/api/comments-filtered?from=01-10-2017&to=10-11-2017&status=2
+```
+
+```
+wget --output-document ./_approved/comments.json http://talk.calciomercato.pro/api/comments-filtered?from=05-11-2017&to=10-11-2017&status=1
+```
 
 ###### Run Code
 
